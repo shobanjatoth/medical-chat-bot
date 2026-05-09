@@ -129,13 +129,13 @@
 import os
 
 from dotenv import load_dotenv
-
+from pinecone import Pinecone
 from fastapi import FastAPI, Request, Form
 from fastapi.responses import HTMLResponse, PlainTextResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 
-from langchain_pinecone import PineconeVectorStore
+# from langchain_pinecone import PineconeVectorStore
 from langchain_google_genai import ChatGoogleGenerativeAI
 
 from langchain.chains import create_retrieval_chain
