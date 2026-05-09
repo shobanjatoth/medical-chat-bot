@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: medical-chatbot
+    env: docker
+    plan: free
+    autoDeploy: true
